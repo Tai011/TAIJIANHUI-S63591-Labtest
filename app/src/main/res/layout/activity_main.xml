@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/intrsution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructions"
+        android:layout_marginTop="10dp"></TextView>
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="This is a simple mathematic games which is believe can train your mind. Two numbers are given randomly based on your level choice with a mathematic operator. You just calculates the answer, write your answer and press check button. Every correct answer will give you 1 point and any wrong answer will deduct 1 point."
+        android:textSize="15dp"
+
+        ></TextView>
+
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose level"
+
+        android:layout_marginTop="20dp"
+        ></TextView>
+
+    <RadioGroup
+
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/choose"
+        app:layout_constraintTop_toBottomOf="@id/choose">
+
+        <RadioButton
+            android:id="@+id/easy"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:checked="true"
+
+            ></RadioButton>
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+
+            android:text="Medium"
+
+            ></RadioButton>
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+
+            android:text="Hard"
+
+            ></RadioButton>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/value1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="30dp"
+
+        ></TextView>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+
+        android:text="+"
+        android:layout_marginLeft="100dp"
+        ></TextView>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/value2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="30dp"
+
+            android:layout_marginLeft="100dp"
+            ></TextView>
+
+
+        ></LinearLayout>
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:padding="0dp"
+        android:textAlignment="center"
+        ></EditText>
+    <Button
+        android:id="@+id/submit"
+        android:text="check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+></Button>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:textColor="@color/orange"
+        android:layout_marginStart="100dp"
+        android:text="POINT : ">
+    </TextView>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id ="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:textColor="@color/orange"
+        android:text=" 0"></TextView>
+</LinearLayout>
+
+</LinearLayout>
+
